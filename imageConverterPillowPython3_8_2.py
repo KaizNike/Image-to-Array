@@ -64,14 +64,15 @@ def image_write(file_path, file_data):
     
 tileGrassRGB = (124, 252, 0)    #lawn green
 tileWaterRGB = (23, 8, 37)  #dark navy blue
-setX = 5
-setY = 9
+setX = 5    #a tile's x width
+setY = 9    #a tile's y height
+inputImage = 'worldsmall.jpg'   #change to name of image needed
 #show_image = get_image('theworld.jpg')
 #show_image = get_image('testing.png')
 # tilex and tiley must be odd numbers as of now
 #show_image = get_image('worldsmall.jpg', 65, 65, tileWaterRGB)
 #show_image = get_image('worldsmall.jpg', 5, 5, tileWaterRGB)
-show_image = get_image('worldsmall.jpg', setX, setY, tileWaterRGB)
+show_image = get_image(inputImage, setX, setY, tileWaterRGB)
 print("Start writing.")
 image_write('output.png', show_image)
 document_write("output.txt", show_image)
